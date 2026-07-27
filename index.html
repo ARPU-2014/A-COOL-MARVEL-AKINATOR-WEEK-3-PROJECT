@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WELCOME TO LUUGHING LAB STUDIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-layer" id="emojiLayer"></div>
+
+    <main class="app-shell">
+      <section class="hero-card">
+        <p class="badge">⚡ Live LLM Joke Studio</p>
+        <h1>WELCOME TO LUUGHING LAB STUDIO</h1>
+        <p class="hero-copy">
+          Ask for a joke about anything, and the chatbot will fire back a fresh laugh with a burst of silly energy.
+        </p>
+      </section>
+
+      <section class="chat-card">
+        <div class="chat-window" id="chatWindow">
+          <div class="bubble bot">
+            <strong>Bot:</strong>
+            <span>
+              Hey! I’m your joke bot. Ask me for a silly joke, a savage one-liner, or a cosmic punchline.
+            </span>
+          </div>
+        </div>
+
+        <form class="input-row" id="jokeForm">
+          <input
+            id="promptInput"
+            type="text"
+            placeholder="Ask the chatbot anything..."
+            autocomplete="off"
+          />
+          <button type="submit">Generate</button>
+        </form>
+
+        <div class="quick-prompts">
+          <button class="chip" data-prompt="Make me a silly joke about cats">🐱 Cats</button>
+          <button class="chip" data-prompt="Give me a savage joke about Monday mornings">😵 Monday</button>
+          <button class="chip" data-prompt="Tell me a goofy joke about robots">🤖 Robots</button>
+          <button class="chip" data-prompt="Make me an absurd joke about space">🚀 Space</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
