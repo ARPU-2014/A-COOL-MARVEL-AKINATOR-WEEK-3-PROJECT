@@ -4,7 +4,7 @@ const promptInput = document.getElementById('promptInput');
 const emojiLayer = document.getElementById('emojiLayer');
 const quickPrompts = document.querySelectorAll('.chip');
 
-const emojis = ['😂', '🤣', '😆', '😄', '🤪', '🤭', '🥳', '🙌', '✨', '🎉'];
+const emojis = ['😂', '🤣', '😆', '😄', '🤪', '🤭', '🥳', '🙌', '', '🎉'];
 
 function addBubble(text, sender = 'bot') {
   const bubble = document.createElement('div');
