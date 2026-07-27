@@ -9,7 +9,7 @@ const emojis = ['😂', '🤣', '😆', '😄', '🤪', '🤭', '🥳', '🙌', 
 function addBubble(text, sender = 'bot') {
   const bubble = document.createElement('div');
   bubble.className = `bubble ${sender}`;
-  bubble.innerHTML = `<strong>${sender === 'user' ? 'You' : 'Bot'}:</strong><span>${text}</span>`;
+  bubble.innerHTML = `<strong>${sender === 'user' ? 'You' : 'ARPU'}:</strong><span>${text}</span>`;
   chatWindow.appendChild(bubble);
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
@@ -17,7 +17,7 @@ function addBubble(text, sender = 'bot') {
 function showTyping() {
   const typing = document.createElement('div');
   typing.className = 'bubble bot';
-  typing.innerHTML = '<strong>Bot:</strong><span class="typing"><span></span><span></span><span></span></span>';
+  typing.innerHTML = '<strong>ARPU:</strong><span class="typing"><span></span><span></span><span></span></span>';
   chatWindow.appendChild(typing);
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
